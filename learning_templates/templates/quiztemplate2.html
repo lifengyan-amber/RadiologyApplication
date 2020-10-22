@@ -96,7 +96,6 @@
             if (currentquestion > -1){
             addChoices(quiz[currentquestion]['choices']);
             setupButtons();
-            $('.choice[data-index="'+quiz[currentquestion]["selection"]+'"]').css({'background-color':'pink'});
             } else {
                 console.log("No more questions");
                 $('#previousbutton').prop("disabled",true);
@@ -164,7 +163,9 @@
                 $('#previousbutton').unbind('click').on('click', function(ev){
                     ev.stopPropagation;
                     currentquestion = quiz[currentquestion]["previous"];
+                    console.log(quiz[currentquestion]["selection"]);
                     nextQuestion();
+                    $('.choice[data-index="'+quiz[currentquestion]["selection"]+'"]').css({'background-color':'pink'});
                 });
             } else {
                 $('#previousbutton').prop("disabled",true);
