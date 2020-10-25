@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
     <link rel="stylesheet" href="{% static "css/landing.css" %}"/>
 </head>
 <body>
@@ -13,8 +13,9 @@
         </div>
         <div class="split right">
           <h1>RADIOLOGY AGREEMENT STATISTICS</h1>
-          <a href="{% url 'basic_app:quiz' %}" class="button" style ="left: 30%;">Take a quiz to find out</a>
-          <a href="{% url 'basic_app:flowchart' %}" class="button" style ="left: 70%">flowchart</a>
+          <h3>What is the best agreement statistics to use for my radiology reading?<h3>
+          <a href="{% url 'basic_app:quiz' %}" class="button" style ="left: 30%;">Take a Quiz</a>
+          <a href="{% url 'basic_app:flowchart' %}" class="button" style ="left: 70%">Flowchart</a>
         </div>
       </div>
 </body>

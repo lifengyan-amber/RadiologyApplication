@@ -1,0 +1,42 @@
+<style>
+
+.bar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #99a8b2;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.bar li {
+  float: left;
+}
+
+.bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.bar li a:hover {
+  background-color: #1c2b2d;
+}
+
+.bar .active {
+  background-color: #1f6f8b;
+}
+
+</style>
+
+<div class="bar">
+    <ul>
+        <li><a class="active" href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'basic_app:quiz' %}" >Quiz</a></li>
+      </ul>
+</div>
+

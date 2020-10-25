@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flow Chart</title>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -18,27 +18,21 @@
 <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
 </head>
 <body>
-    <h1>Welcome to Flow Chart Page!</h1>
-    <div>
-    <div class = "center"  style = "display: block;">
-
-        <a href="{% url 'basic_app:quiz' %}" style="color: #ccc;">Take a quiz to find out</a>
-        <a href="{% url 'index' %}" style="color: #ccc;">Home Page</a>
-    
-        </div>
+    {% include "basic_app/navbar.html" %}
+    <h1>Agreement Flow Chart</h1>
     <div class = "center" style = "display: block;">
     <nav class="nav">
                 <ul>
                     <li>
-                        <a href="#" data-toggle="tooltip" title="Definition of continuous variable goes here">Continuous Variable</a>
+                        <a href="#" data-toggle="tooltip" title="E.g. Measurements of blood vessel wall column">Continuous Variable</a>
                         <ul>
                             <!-- Branch 1-->
                             <li>
-                                <a href="#" data-toggle="tooltip" title="Definition of intrarater goes here but it is pretty obvious..">Intrarater Reliability</a>
+                                <a href="#" data-toggle="tooltip" title="The degree of agreement among repeated administrations of a diagnostic test performed by a single rater.">Intrarater Reliability</a>
                                 <ul>
                                     <!-- Branch 1.1-->
                                     <li>
-                                        <a href="#" >Single Measurement</a>
+                                        <a href="#" data-toggle="tooltip" title="Each subject is measureed by a different set of randomly selected raters.Reliability is calculated from a single measurement.">Single Measurement</a>
                                         <ul>
                                             <!-- Branch 1.1-->
                                             <li>
@@ -49,7 +43,7 @@
     
                                     </li>
                                     <li>
-                                        <a href="#">Mean of multiple Measurements</a>
+                                        <a href="#" data-toggle="tooltip" title="Each subject is measureed by a different set of randomly selected raters.Reliability is calculated from the average measurement.">Mean of multiple Measurements</a>
                                         <ul>
                                             <!-- Branch 1.1-->
                                             <li>
@@ -62,7 +56,7 @@
                             </li>
                             <!-- Branch 2-->
                             <li>
-                                <a href="#">Interrater Reliability</a>
+                                <a href="#" data-toggle="tooltip" title="The degree of agreement among different raters.">Interrater Reliability</a>
                                 <ul>
                                     <!-- Branch 1.1-->
                                     <li>
@@ -100,7 +94,6 @@
             </nav>
         </div>
     
-       </div>
     
 
        <script>

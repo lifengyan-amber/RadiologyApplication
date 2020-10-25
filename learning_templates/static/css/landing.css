@@ -24,6 +24,18 @@ html, body {
     white-space: normal;
     word-wrap:break-word;
   }
+
+  h3 {
+    font-size: 2rem;
+    color: #fff;
+    position: relative;
+    left: 50%;
+    top: 20%;
+    text-align: center;
+    transform: translateX(-50%);
+    white-space: normal;
+    word-wrap:break-word;
+  }
   
   .button {
     display: block;
