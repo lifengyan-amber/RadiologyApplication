@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="{% static "css/landing.css" %}"/>
 </head>
 <body>
-    <h1>Welcome to Radiologist Agreement Guide!</h1>
-    <a href="{% url 'basic_app:flowchart' %}">Flow Chart</a>
-    <a href="{% url 'basic_app:quiz' %}">Quiz Page</a>
+    <div class="container">
+        <div class="split left">
+        </div>
+        <div class="split right">
+          <h1>RADIOLOGY AGREEMENT STATISTICS</h1>
+          <a href="{% url 'basic_app:quiz' %}" class="button" style ="left: 30%;">Take a quiz to find out</a>
+          <a href="{% url 'basic_app:flowchart' %}" class="button" style ="left: 70%">flowchart</a>
+        </div>
+      </div>
 </body>
 </html>
