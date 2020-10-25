@@ -47,7 +47,7 @@
             if (currentquestion > -1){
             addChoices(quiz[currentquestion]['choices']);
             setupButtons();
-            $('.choice[data-index="'+quiz[currentquestion]["selection"]+'"]').addClass('selected');
+            $('.choice[data-index="'+quiz[currentquestion]["selection"]+'"]').css({'border-color':'#222','font-weight':700,'background-color':'#c1c1c1'});
             } else {
                 console.log("No more questions");
                 $('#previousbutton').prop("disabled",true);

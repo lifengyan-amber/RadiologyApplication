@@ -52,7 +52,7 @@ var quiz = {
             "question"      :   "How are raters selected?",
             "choices"       :   {
                                     "Specific set of raters": 8,
-                                    "Random set of raters": -1
+                                    "Random set of raters": 13
                                 },
             "selection"       :   -1,
             "previous"      :   3,
@@ -61,8 +61,8 @@ var quiz = {
         8: {
             "question"      :   "How many raters",
             "choices"       :   {
-                                    "Single": -1,
-                                    "Multiple": -1
+                                    "Single": 20,
+                                    "Multiple": 21
                                 },
             "selection"       :   -1,
             "previous"      :   7,
@@ -89,5 +89,88 @@ var quiz = {
         12 : {
             "results": "ICC(1,k,A)",
             "previous":   10
-        }      
+        },
+        13: {
+            "question"      :   "How many raters",
+            "choices"       :   {
+                                    "Single": 14,
+                                    "Multiple": 15
+                                },
+            "selection"       :   -1,
+            "previous"      :   7,
+            "results": -1
+        }, 
+        14: {
+            "question"      :   "Agreement or consistency?",
+            "choices"       :   {
+                                    "Agreement": 16,
+                                    "Consistency": 17
+                                },
+            "selection"       :   -1,
+            "previous"      :   13,
+            "results": -1
+        },
+        15: {
+            "question"      :   "Agreement or consistency?",
+            "choices"       :   {
+                                    "Agreement": 18,
+                                    "Consistency": 19
+                                },
+            "selection"       :   -1,
+            "previous"      :   13,
+            "results": -1
+        },
+        16 : {
+            "results": "ICC(2,1,A)",
+            "previous":   14
+        },
+        17 : {
+            "results": "ICC(1,C)",
+            "previous":   14
+        },
+        18 : {
+            "results": "ICC(2,k,A)",
+            "previous":   15
+        },
+        19 : {
+            "results": "ICC(k,C)",
+            "previous":   15
+        },
+        20: {
+            "question"      :   "Agreement or consistency?",
+            "choices"       :   {
+                                    "Agreement": 22,
+                                    "Consistency": 23
+                                },
+            "selection"       :   -1,
+            "previous"      :   8,
+            "results": -1
+        },
+        21: {
+            "question"      :   "Agreement or consistency?",
+            "choices"       :   {
+                                    "Agreement": 24,
+                                    "Consistency": 25
+                                },
+            "selection"       :   -1,
+            "previous"      :   8,
+            "results": -1
+        }, 
+        22 : {
+            "results": "ICC(1,A)",
+            "previous":   20
+        },
+        23 : {
+            "results": "ICC(3,1,C)",
+            "previous":   20
+        },
+        24 : {
+            "results": "ICC(k,A)",
+            "previous":   21
+        },
+        25 : {
+            "results": "ICC(3,k,C)",
+            "previous":   21
+        }
+
     };
