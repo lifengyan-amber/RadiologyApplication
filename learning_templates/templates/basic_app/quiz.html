@@ -58,6 +58,7 @@
                 console.log("No more questions");
                 $('#previousbutton').prop("disabled",true);
                 currentquestion = 0;
+                nextQuestion();
             }
         }
 
@@ -67,14 +68,6 @@
          * @param {choice} number The li zero-based index of the choice picked
          */
         function processQuestion(choice){
-/*                 if(quiz[currentquestion]['choices'][choice] == quiz[currentquestion]['correct']){
-                $('.choice').eq(choice).css({'background-color':'#50D943'});
-                $('#explanation').html('<strong>Correct!</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
-                score++;
-            } else {
-                $('.choice').eq(choice).css({'background-color':'#D92623'});
-                $('#explanation').html('<strong>Incorrect.</strong> ' + htmlEncode(quiz[currentquestion]['explanation']));
-            } */
             previousquestion = currentquestion;
             currentquestion = quiz[currentquestion]["choices"][choice];
                 if(quiz[currentquestion] !== undefined && quiz[currentquestion]["results"] != -1){
@@ -84,6 +77,7 @@
                 } else {
                     console.log("Need to inplement this node");
                     currentquestion = previousquestion;
+                    nextQuestion();
                 }
 
             
