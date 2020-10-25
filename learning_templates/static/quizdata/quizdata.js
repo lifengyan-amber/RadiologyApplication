@@ -1,6 +1,6 @@
 var quiz = {
         0 : {
-            "question"      :   "What kind of variable are you working with?",
+            "question"      :   "What kind of reliability you wish to explore?",
             "choices"       :   {
                                     "Intrarater Reliability": 1,
                                     "Interrater Reliability": 2
@@ -34,7 +34,7 @@ var quiz = {
             "question"      :   "How do raters read",
             "choices"       :   {
                                     "Same set of raters for all subjects": 7,
-                                    "Each subject rated by different set of raters": -1
+                                    "Each subject rated by different set of raters": 10
                                 },
             "selection"       :   -1,
             "previous"      :   2,
@@ -72,5 +72,22 @@ var quiz = {
             "results": "CCC",
             "previous":   2
         },
-        
+        10: {
+            "question"      :   "How many raters",
+            "choices"       :   {
+                                    "Single": 11,
+                                    "Multiple": 12
+                                },
+            "selection"       :   -1,
+            "previous"      :   3,
+            "results": -1
+        },
+        11 : {
+            "results": "ICC(1,1,A)",
+            "previous":   10
+        },
+        12 : {
+            "results": "ICC(1,k,A)",
+            "previous":   10
+        }      
     };
