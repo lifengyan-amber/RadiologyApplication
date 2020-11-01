@@ -1,5 +1,10 @@
 <style>
 
+.bar {
+font-size: 20px;
+}
+
+
 .bar ul {
   list-style-type: none;
   margin: 0;
@@ -19,7 +24,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 10px;
   text-decoration: none;
 }
 
@@ -37,7 +42,7 @@
     <ul>
         <li><a class="active" href="{% url 'index' %}">Home</a></li>
         <li><a href="{% url 'basic_app:flowchart' %}" >Flow Chart</a></li>
-        <li><a href="{% url 'basic_app:quiz' %}" >Quiz</a></li>
+        <li><a href="{% url 'basic_app:quiz' %}" >Search</a></li>
       </ul>
 </div>
 
