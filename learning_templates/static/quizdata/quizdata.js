@@ -1,5 +1,18 @@
 var quiz = {
         0 : {
+            "question"      :   "What kind of variables are you working with?",
+            "choices"       :   {
+                                    "Categorical": 27,
+                                    "Binary": 28,
+                                    "Continuous Variable": 26,
+                                },
+            "selection"     :   -1,
+            "previous"      :   -1,
+            "results": -1
+
+        },
+        
+        26 : {
             "question"      :   "What kind of reliability you wish to explore?",
             "choices"       :   {
                                     "Intrarater Reliability": 1,
@@ -42,7 +55,8 @@ var quiz = {
         },
         5 : {
             "results": "ICC(1,A)",
-            "previous":   1
+            "previous":   1,
+            "link": "icc1A"
         },
         6 : {
             "results": "ICC(k,A)",
@@ -171,6 +185,14 @@ var quiz = {
         25 : {
             "results": "ICC(3,k,C)",
             "previous":   21
+        },
+        27 : {
+            "results": "Weighted Kappa",
+            "previous":   0
+        },
+        28 : {
+            "results": "Fleiss' Kappa",
+            "previous":   0
         }
 
     };

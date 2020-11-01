@@ -31,7 +31,7 @@ body {
 
 
 div a{
-    width: 100px;
+    width: 120px;
     color: #fff;
 }
 
@@ -155,5 +155,5 @@ h1 {
 #wrapper {
   margin-left:auto;
   margin-right:auto;
-  width: 1800px;
+  width: 2800px;
 }

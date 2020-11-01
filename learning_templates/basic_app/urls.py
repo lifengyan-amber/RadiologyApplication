@@ -9,5 +9,5 @@ app_name = 'basic_app'
 urlpatterns = [
     url(r'^flowchart/$', views.flowchart, name = 'flowchart'),
     url(r'^quiz/$', views.quiz, name = 'quiz'),
-     url(r'^calculation/$', views.calculate, name = 'calculate'),
+    url(r'^icc1A/$', views.icc1A, name = 'icc1A'),
 ]

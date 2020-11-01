@@ -88,18 +88,11 @@
 
             $('.choice').on('click', function(){
                 picked = $(this).attr('data-index');
+                quiz[currentquestion]["selection"] = picked;
+                processQuestion(picked);
                 
                 $('.choice').removeAttr('style').off('mouseout mouseover');
                 $(this).css({'border-color':'#222','font-weight':700,'background-color':'#c1c1c1'});
-                if(submt){
-                    submt=false;
-                    $('#submitbutton').css({'color':'#000'}).on('click', function(){
-                        $('.choice').off('click');
-                        $(this).off('click');
-                        quiz[currentquestion]["selection"] = picked;
-                        processQuestion(picked);
-                    });
-                }
                 
             })
 
@@ -124,6 +117,17 @@
             $('#choice-block').empty();
             $('#submitbutton').hide();
             $('#question').text(quiz[currentquestion]["results"]);
+            if (currentquestion > 0) {
+                $('#previousbutton').show();
+                $('#previousbutton').unbind('click').on('click', function(ev){
+                    ev.stopPropagation;
+                    currentquestion = quiz[currentquestion]["previous"];
+                    nextQuestion();
+                });
+            } else {
+                $('#previousbutton').hide();
+            }
+            window.open("/basic_app/" + quiz[currentquestion]["link"]);
             //$(document.createElement('h2')).css({'text-align':'center', 'font-size':'4em'}).text(quiz[currentquestion]["results"]).insertAfter('#question');
         }
 
@@ -154,7 +158,6 @@
                 addChoices(quiz[0]['choices']);
             
                 //add submit button
-                $(document.createElement('div')).addClass('choice-box').attr('id', 'submitbutton').text('Next Question').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
                 $(document.createElement('div')).addClass('choice-box').attr('id', 'previousbutton').text('Previous Question').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
             
                 setupButtons();

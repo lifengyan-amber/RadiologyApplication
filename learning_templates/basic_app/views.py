@@ -12,7 +12,7 @@ def quiz(request):
 def flowchart(request):
     return render(request, 'basic_app/flowchart.html')
 
-def calculate(request):
-    return render(request, 'basic_app/calculate.html')
+def icc1A(request):
+    return render(request, 'basic_app/ICC1A.html')
 
 
