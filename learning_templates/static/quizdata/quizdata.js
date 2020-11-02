@@ -60,7 +60,8 @@ var quiz = {
         },
         6 : {
             "results": "ICC(k,A)",
-            "previous":   1
+            "previous":   1,
+            "link": "icckA"
         },
         7: {
             "question"      :   "How are raters selected?",
@@ -136,19 +137,23 @@ var quiz = {
         },
         16 : {
             "results": "ICC(2,1,A)",
-            "previous":   14
+            "previous":   14,
+            "link": "icc21A"
         },
         17 : {
             "results": "ICC(1,C)",
-            "previous":   14
+            "previous":   14,
+            "link": "icc1c"
         },
         18 : {
             "results": "ICC(2,k,A)",
-            "previous":   15
+            "previous":   15,
+            "link": "icc2kA"
         },
         19 : {
             "results": "ICC(k,C)",
-            "previous":   15
+            "previous":   15,
+            "link": "icckc"
         },
         20: {
             "question"      :   "Agreement or consistency?",
@@ -172,19 +177,23 @@ var quiz = {
         }, 
         22 : {
             "results": "ICC(1,A)",
-            "previous":   20
+            "previous":   20,
+            "link": "icc1A"
         },
         23 : {
             "results": "ICC(3,1,C)",
-            "previous":   20
+            "previous":   20,
+            "link": "icc31C"
         },
         24 : {
             "results": "ICC(k,A)",
-            "previous":   21
+            "previous":   21,
+            "link": "icckA"
         },
         25 : {
             "results": "ICC(3,k,C)",
-            "previous":   21
+            "previous":   21,
+            "link": "icc3kC"
         },
         27 : {
             "results": "Weighted Kappa",
