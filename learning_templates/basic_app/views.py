@@ -38,4 +38,16 @@ def icc1c(request):
 def icckc(request):
     return render(request, 'basic_app/ICCKC.html')
 
+def icc11a(request):
+    return render(request, 'basic_app/ICC11A.html')
+
+def icc1ka(request):
+    return render(request, 'basic_app/ICC1kA.html')
+
+def weightedkappa(request):
+    return render(request, 'basic_app/WeightedKappa.html')
+
+def fleisskappa(request):
+    return render(request, 'basic_app/FleissKappa.html')
+
 

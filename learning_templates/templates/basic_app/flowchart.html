@@ -18,10 +18,12 @@
 <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
 </head>
 <body>
-    {% include "basic_app/navbar.html" %}
+   
     <div id ="wrapper">
-    <h1>Agreement Flow Chart</h1>
+    {% include "basic_app/navbar.html" %}
+    
     <div class = "center" style = "display: block;">
+    <h1>Agreement Flow Chart</h1>
     <nav class="nav">
                 <ul>
                 <li>
@@ -30,7 +32,7 @@
                         <a href="#" data-toggle="tooltip" title="">Categorical Variable</a>
                         <ul>
                             <li>
-                                <a href="#" data-toggle="tooltip" title="">Weighted Kappa</a>
+                                <a href="{% url 'basic_app:weightedkappa' %}" target="_blank" data-toggle="tooltip" title="">Weighted Kappa</a>
                         </ul>
                 </ul>
                 </li>
@@ -49,7 +51,7 @@
                                         <ul>
                                             <!-- Branch 1.1-->
                                             <li>
-                                                <a href="#">ICC(1,A)</a>
+                                                <a href="{% url 'basic_app:icc1A' %}" target="_blank">ICC(1,A)</a>
             
                                             </li>
                                         </ul>
@@ -60,7 +62,7 @@
                                         <ul>
                                             <!-- Branch 1.1-->
                                             <li>
-                                                <a href="#">ICC(k,A)</a>
+                                                <a href="{% url 'basic_app:icckA' %}" target="_blank">ICC(k,A)</a>
             
                                             </li>
                                         </ul>
@@ -73,7 +75,7 @@
                                 <ul>
                                     <!-- Branch 1.1-->
                                     <li>
-                                        <a href="#">ANOVA Model Assumptions Satisfied</a>
+                                        <a href="#" data-toggle="tooltip" title="The data are independent, the responses for each factor leve have a normal distribution, with same mean and variance.">ANOVA Model Assumptions Satisfied</a>
                                         <ul>
                                             <!-- Branch 1.1-->
                                             <li>
@@ -85,7 +87,7 @@
                                                         <ul>
                                                             <!-- Branch 1.1-->
                                                             <li>
-                                                                <a href="#">Single rater</a>
+                                                                <a href="#" data-toggle="tooltip" title="Each subject is measureed by a different set of randomly selected raters.Reliability is calculated from a single measurement.">Single Measurement</a>
                                                                 <ul>
                                                                     <!-- Branch 1.1-->
                                                                     <li>
@@ -93,7 +95,7 @@
                                                                         <ul>
                                                                             <!-- Branch 1.1-->
                                                                             <li>
-                                                                                <a href="#">ICC(1,A)</a>
+                                                                                <a href="{% url 'basic_app:icc1A' %}" target="_blank">ICC(1,A)</a>
                                             
                                                                             </li>
                                                                         </ul>
@@ -105,7 +107,7 @@
                                                                         <ul>
                                                                             <!-- Branch 1.1-->
                                                                             <li>
-                                                                                <a href="#">ICC(3,1,C)</a>
+                                                                                <a href="{% url 'basic_app:icc31C' %}" target="_blank">ICC(3,1,C)</a>
                                             
                                                                             </li>
                                                                         </ul>
@@ -116,15 +118,15 @@
                                                             </li>
                 
                                                             <li>
-                                                                <a href="#">Multiple raters</a>
+                                                                <a href="#" data-toggle="tooltip" title="Each subject is measureed by a different set of randomly selected raters.Reliability is calculated from the average measurement.">Mean of multiple Measurements</a>
                                                                 <ul>
                                                                     <!-- Branch 1.1-->
                                                                     <li>
-                                                                        <a href="#">Absolute Agreement</a>
+                                                                        <a href="#" data-toggle="tooltip" title="Absolute agreement concerns if different raters assign the same score to the same subject.">Absolute Agreement</a>
                                                                         <ul>
                                                                             <!-- Branch 1.1-->
                                                                             <li>
-                                                                                <a href="#">ICC(k,A)</a>
+                                                                                <a href="{% url 'basic_app:icckA' %}" target="_blank">ICC(k,A)</a>
                                             
                                                                             </li>
                                                                         </ul>
@@ -132,11 +134,11 @@
                                                                     </li>
                         
                                                                     <li>
-                                                                        <a href="#">Consistency</a>
+                                                                        <a href="#" data-toggle="tooltip" title="Consistency definition concerns if raters’ scores to the same group of subjects are correlated in an additive manner. For example, one rater’s score (y) can be equated to another rater’s score (x) plus a systematic error (c) (ie, y = x + c).">Consistency</a>
                                                                         <ul>
                                                                             <!-- Branch 1.1-->
                                                                             <li>
-                                                                                <a href="#">ICC(3,k,C)</a>
+                                                                                <a href="{% url 'basic_app:icc3kC' %}" target="_blank">ICC(3,k,C)</a>
                                             
                                                                             </li>
                                                                         </ul>
@@ -154,15 +156,15 @@
                                                         <ul>
                                                             <!-- Branch 1.1-->
                                                             <li>
-                                                                <a href="#">Single rater</a>
+                                                                <a href="#" data-toggle="tooltip" title="Each subject is measureed by a different set of randomly selected raters.Reliability is calculated from a single measurement.">Single Measurement</a>
                                                                 <ul>
                                                                     <!-- Branch 1.1-->
                                                                     <li>
-                                                                        <a href="#">Absolute Agreement</a>
+                                                                        <a href="#" data-toggle="tooltip" title="Absolute agreement concerns if different raters assign the same score to the same subject.">Absolute Agreement</a>
                                                                         <ul>
                                                                             <!-- Branch 1.1-->
                                                                             <li>
-                                                                                <a href="#">ICC(2,1,A)</a>
+                                                                                <a href="{% url 'basic_app:icc21A' %}" target="_blank">ICC(2,1,A)</a>
                                             
                                                                             </li>
                                                                         </ul>
@@ -170,11 +172,11 @@
                                                                     </li>
                         
                                                                     <li>
-                                                                        <a href="#">Consistency</a>
+                                                                        <a href="#" data-toggle="tooltip" title="Consistency definition concerns if raters’ scores to the same group of subjects are correlated in an additive manner. For example, one rater’s score (y) can be equated to another rater’s score (x) plus a systematic error (c) (ie, y = x + c).">Consistency</a>
                                                                         <ul>
                                                                             <!-- Branch 1.1-->
                                                                             <li>
-                                                                                <a href="#">ICC(1,C)</a>
+                                                                                <a href="{% url 'basic_app:icc1c' %}" target="_blank">ICC(1,C)</a>
                                             
                                                                             </li>
                                                                         </ul>
@@ -185,15 +187,15 @@
                                                             </li>
                 
                                                             <li>
-                                                                <a href="#">Multiple raters</a>
+                                                                <a href="#" data-toggle="tooltip" title="Each subject is measureed by a different set of randomly selected raters.Reliability is calculated from the average measurement.">Mean of multiple Measurements</a>
                                                                 <ul>
                                                                     <!-- Branch 1.1-->
                                                                     <li>
-                                                                        <a href="#">Absolute Agreement</a>
+                                                                        <a href="#" data-toggle="tooltip" title="Absolute agreement concerns if different raters assign the same score to the same subject.">Absolute Agreement</a>
                                                                         <ul>
                                                                             <!-- Branch 1.1-->
                                                                             <li>
-                                                                                <a href="#">ICC(2,k,A)</a>
+                                                                                <a href="{% url 'basic_app:icc2kA' %}" target="_blank">ICC(2,k,A)</a>
                                             
                                                                             </li>
                                                                         </ul>
@@ -201,11 +203,11 @@
                                                                     </li>
                         
                                                                     <li>
-                                                                        <a href="#">Consistency</a>
+                                                                        <a href="#" data-toggle="tooltip" title="Consistency definition concerns if raters’ scores to the same group of subjects are correlated in an additive manner. For example, one rater’s score (y) can be equated to another rater’s score (x) plus a systematic error (c) (ie, y = x + c).">Consistency</a>
                                                                         <ul>
                                                                             <!-- Branch 1.1-->
                                                                             <li>
-                                                                                <a href="#">ICC(k,C)</a>
+                                                                                <a href="{% url 'basic_app:icckc' %}" target="_blank">ICC(k,C)</a>
                                             
                                                                             </li>
                                                                         </ul>
@@ -226,11 +228,11 @@
                                                 <ul>
                                                     <!-- Branch 1.1-->
                                                     <li>
-                                                        <a href="#">Single Rater</a>
+                                                        <a href="#" data-toggle="tooltip" title="Each subject is measureed by a different set of randomly selected raters.Reliability is calculated from a single measurement.">Single Measurement</a>
                                                         <ul>
                                                             <!-- Branch 1.1-->
                                                             <li>
-                                                                <a href="#">ICC(1,1,A)</a>
+                                                                <a href="{% url 'basic_app:icc11a' %}" target="_blank">ICC(1,1,A)</a>
                             
                                                             </li>
                                                         </ul>
@@ -238,11 +240,11 @@
                                                     </li>
         
                                                     <li>
-                                                        <a href="#">Multiple Raters</a>
+                                                        <a href="#" data-toggle="tooltip" title="Each subject is measureed by a different set of randomly selected raters.Reliability is calculated from the average measurement.">Mean of multiple Measurements</a>
                                                         <ul>
                                                             <!-- Branch 1.1-->
                                                             <li>
-                                                                <a href="#">ICC(1,k,A)</a>
+                                                                <a href="{% url 'basic_app:icc1ka' %}" target="_blank">ICC(1,k,A)</a>
                             
                                                             </li>
                                                         </ul>
@@ -277,7 +279,7 @@
                         <a href="#" data-toggle="tooltip" title="">Binomial Variable</a>
                         <ul>
                             <li>
-                                <a href="#" data-toggle="tooltip" title="">Fleiss' Kappa</a>
+                                <a href="{% url 'basic_app:fleisskappa' %}" target="_blank" data-toggle="tooltip" title="">Fleiss' Kappa</a>
                         </ul>
                 </ul>
                 </li>

@@ -16,7 +16,7 @@ var quiz = {
             "question"      :   "What kind of reliability you wish to explore?",
             "choices"       :   {
                                     "Intrarater Reliability": 1,
-                                    "Interrater Reliability": 2
+                                    "Interrater Reliability": 3
                                 },
             "selection"     :   -1,
             "previous"      :   -1,
@@ -24,7 +24,7 @@ var quiz = {
 
         },
         1: {
-            "question"      :   "What kind of measurements do you use",
+            "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
                                     "Single measurements": 5,
                                     "Mean of multiple measurements": 6
@@ -34,7 +34,7 @@ var quiz = {
             "results": -1
         },
         2: {
-            "question"      :   "Does the model satisfy ANOVA assumption",
+            "question"      :   "Does the model satisfy ANOVA assumption?",
             "choices"       :   {
                                     "Yes": 3,
                                     "Not Anova": 9
@@ -44,13 +44,13 @@ var quiz = {
             "results": -1
         },
         3: {
-            "question"      :   "How do raters read",
+            "question"      :   "How do raters read?",
             "choices"       :   {
                                     "Same set of raters for all subjects": 7,
                                     "Each subject rated by different set of raters": 10
                                 },
             "selection"       :   -1,
-            "previous"      :   2,
+            "previous"      :   26,
             "results": -1
         },
         5 : {
@@ -74,10 +74,10 @@ var quiz = {
             "results": -1
         },
         8: {
-            "question"      :   "How many raters",
+            "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
-                                    "Single": 20,
-                                    "Multiple": 21
+                                    "Single measurements": 20,
+                                    "Mean of multiple measurements": 21
                                 },
             "selection"       :   -1,
             "previous"      :   7,
@@ -88,10 +88,10 @@ var quiz = {
             "previous":   2
         },
         10: {
-            "question"      :   "How many raters",
+            "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
-                                    "Single": 11,
-                                    "Multiple": 12
+                                    "Single measurements": 11,
+                                    "Mean of multiple measurements": 12
                                 },
             "selection"       :   -1,
             "previous"      :   3,
@@ -99,37 +99,39 @@ var quiz = {
         },
         11 : {
             "results": "ICC(1,1,A)",
-            "previous":   10
+            "previous":   10,
+            "link": "icc11a"
         },
         12 : {
             "results": "ICC(1,k,A)",
-            "previous":   10
+            "previous":   10,
+            "link": "icc1ka"
         },
         13: {
-            "question"      :   "How many raters",
+            "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
-                                    "Single": 14,
-                                    "Multiple": 15
+                                    "Single measurements": 14,
+                                    "Mean of multiple measurements": 15
                                 },
             "selection"       :   -1,
             "previous"      :   7,
             "results": -1
         }, 
         14: {
-            "question"      :   "Agreement or consistency?",
+            "question"      :   "Absolute agreement or consistency?",
             "choices"       :   {
-                                    "Agreement": 16,
-                                    "Consistency": 17
+                                    "Absolute Agreement: if different raters read the same measurement to the same object (y = x)": 16,
+                                    "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 17
                                 },
             "selection"       :   -1,
             "previous"      :   13,
             "results": -1
         },
         15: {
-            "question"      :   "Agreement or consistency?",
+            "question"      :   "Absolute agreement or consistency?",
             "choices"       :   {
-                                    "Agreement": 18,
-                                    "Consistency": 19
+                                    "Absolute Agreement: if different raters read the same measurement to the same object (y = x)": 18,
+                                    "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 19
                                 },
             "selection"       :   -1,
             "previous"      :   13,
@@ -156,20 +158,20 @@ var quiz = {
             "link": "icckc"
         },
         20: {
-            "question"      :   "Agreement or consistency?",
+            "question"      :   "Absolute agreement or consistency?",
             "choices"       :   {
-                                    "Agreement": 22,
-                                    "Consistency": 23
+                                    "Absolute Agreement: if different raters read the same measurement to the same object (y = x)": 22,
+                                    "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 23
                                 },
             "selection"       :   -1,
             "previous"      :   8,
             "results": -1
         },
         21: {
-            "question"      :   "Agreement or consistency?",
+            "question"      :   "Absolute agreement or consistency?",
             "choices"       :   {
-                                    "Agreement": 24,
-                                    "Consistency": 25
+                                    "Absolute Agreement: if different raters read the same measurement to the same object (y = x)": 24,
+                                    "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 25
                                 },
             "selection"       :   -1,
             "previous"      :   8,
@@ -197,11 +199,13 @@ var quiz = {
         },
         27 : {
             "results": "Weighted Kappa",
-            "previous":   0
+            "previous":   0,
+            "link": "weightedkappa"
         },
         28 : {
             "results": "Fleiss' Kappa",
-            "previous":   0
+            "previous":   0,
+            "link": "fleisskappa"
         }
 
     };

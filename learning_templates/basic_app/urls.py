@@ -17,4 +17,8 @@ urlpatterns = [
     url(r'^icc2kA/$', views.icc2kA, name = 'icc2kA'),
     url(r'^icc1c/$', views.icc1c, name = 'icc1c'),
     url(r'^icckc/$', views.icckc, name = 'icckc'),
+    url(r'^icc11a/$', views.icc11a, name = 'icc11a'),
+    url(r'^icc1ka/$', views.icc1ka, name = 'icc1ka'),
+    url(r'^weightedkappa/$', views.weightedkappa, name = 'weightedkappa'),
+    url(r'^fleisskappa/$', views.fleisskappa, name = 'fleisskappa'),
 ]
