@@ -2,9 +2,9 @@ var quiz = {
         0 : {
             "question"      :   "What kind of variables are you working with?",
             "choices"       :   {
-                                    "Categorical": 27,
-                                    "Binary": 28,
-                                    "Continuous Variable": 26,
+                                    "Multicategorical data": 28,
+                                    "Binary data: for example, yes or no": 27,
+                                    "Continuous Variable: for example, measuring vessel wall volumn": 26,
                                 },
             "selection"     :   -1,
             "previous"      :   -1,
@@ -15,22 +15,22 @@ var quiz = {
         26 : {
             "question"      :   "What kind of reliability you wish to explore?",
             "choices"       :   {
-                                    "Intrarater Reliability": 1,
-                                    "Interrater Reliability": 3
+                                    "Intrarater Reliability: reliability within the same rater": 1,
+                                    "Interrater Reliability: relatbility between different raters": 3
                                 },
             "selection"     :   -1,
-            "previous"      :   -1,
+            "previous"      :   0,
             "results": -1
 
         },
         1: {
             "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
-                                    "Single measurements": 5,
-                                    "Mean of multiple measurements": 6
+                                    "Single measurements: this ICC is an index for the reliability of the ratings for one, typical, single rater.": 5,
+                                    "Mean of multiple measurements: this ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 6
                                 },
             "selection"       :   -1,
-            "previous"      :   0,
+            "previous"      :   26,
             "results": -1
         },
         2: {
@@ -76,8 +76,8 @@ var quiz = {
         8: {
             "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
-                                    "Single measurements": 20,
-                                    "Mean of multiple measurements": 21
+                                    "Single measurements: this ICC is an index for the reliability of the ratings for one, typical, single rater.": 20,
+                                    "Mean of multiple measurements: this ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 21
                                 },
             "selection"       :   -1,
             "previous"      :   7,
@@ -90,8 +90,8 @@ var quiz = {
         10: {
             "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
-                                    "Single measurements": 11,
-                                    "Mean of multiple measurements": 12
+                                    "Single measurements: this ICC is an index for the reliability of the ratings for one, typical, single rater.": 11,
+                                    "Mean of multiple measurements: this ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 12
                                 },
             "selection"       :   -1,
             "previous"      :   3,
@@ -110,8 +110,8 @@ var quiz = {
         13: {
             "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
-                                    "Single measurements": 14,
-                                    "Mean of multiple measurements": 15
+                                    "Single measurements: this ICC is an index for the reliability of the ratings for one, typical, single rater.": 14,
+                                    "Mean of multiple measurements: this ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 15
                                 },
             "selection"       :   -1,
             "previous"      :   7,

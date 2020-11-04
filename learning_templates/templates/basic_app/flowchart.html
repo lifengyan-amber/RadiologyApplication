@@ -32,7 +32,17 @@
                         <a href="#" data-toggle="tooltip" title="">Categorical Variable</a>
                         <ul>
                             <li>
-                                <a href="{% url 'basic_app:weightedkappa' %}" target="_blank" data-toggle="tooltip" title="">Weighted Kappa</a>
+                                <a href="#" data-toggle="tooltip" title="More than two categories">Multicategorical Variable</a>
+                            <ul>
+                            <li>
+                                <a href="{% url 'basic_app:fleisskappa' %}" target="_blank" data-toggle="tooltip" title="">Fleiss' Kappa</a>
+                            </ul>
+                            <li>
+                                    <a href="#" data-toggle="tooltip" title="Two categories">Binomial Variable</a>
+                                 <ul>
+                                    <li>
+                                    <a href="{% url 'basic_app:weightedkappa' %}" target="_blank" data-toggle="tooltip" title="">Weighted Kappa</a>
+                                 </ul>
                         </ul>
                 </ul>
                 </li>
@@ -273,15 +283,6 @@
                     </li>
                 </ul>
                 </li>
-                <li>
-                <ul>
-                    <li>
-                        <a href="#" data-toggle="tooltip" title="">Binomial Variable</a>
-                        <ul>
-                            <li>
-                                <a href="{% url 'basic_app:fleisskappa' %}" target="_blank" data-toggle="tooltip" title="">Fleiss' Kappa</a>
-                        </ul>
-                </ul>
                 </li>
                 </ul>
             </nav>
