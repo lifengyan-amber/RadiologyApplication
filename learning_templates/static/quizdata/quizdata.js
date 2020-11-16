@@ -85,7 +85,8 @@ var quiz = {
         },
         9 : {
             "results": "CCC",
-            "previous":   2
+            "previous":   2,
+            "link": "ccc"
         },
         10: {
             "question"      :   "What kind of measurements do you use?",
