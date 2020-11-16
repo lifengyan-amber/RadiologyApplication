@@ -2,7 +2,7 @@ var quiz = {
         0 : {
             "question"      :   "What kind of variables are you working with?",
             "choices"       :   {
-                                    "Multicategorical data": 28,
+                                    "Multicategorical data: for example, mental state": 28,
                                     "Binary data: for example, yes or no": 27,
                                     "Continuous Variable: for example, measuring vessel wall volumn": 26,
                                 },
@@ -36,8 +36,8 @@ var quiz = {
         2: {
             "question"      :   "Does the model satisfy ANOVA assumption?",
             "choices"       :   {
-                                    "Yes": 3,
-                                    "Not Anova": 9
+                                    "Yes: The data are independent, the responses for each factor level have a normal distribution, with same mean and variance.": 3,
+                                    "No: The assumptions above not satisfied.": 9
                                 },
             "selection"       :   -1,
             "previous"      :   26,
@@ -67,7 +67,7 @@ var quiz = {
             "question"      :   "How are raters selected?",
             "choices"       :   {
                                     "Specific set of raters": 8,
-                                    "Random set of raters": 13
+                                    "Raters are randomly selected": 13
                                 },
             "selection"       :   -1,
             "previous"      :   3,
@@ -121,7 +121,7 @@ var quiz = {
         14: {
             "question"      :   "Absolute agreement or consistency?",
             "choices"       :   {
-                                    "Absolute Agreement: if different raters read the same measurement to the same object (y = x)": 16,
+                                    "Absolute Agreement: if different raters assign the same measurement to the same object (y = x)": 16,
                                     "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 17
                                 },
             "selection"       :   -1,
@@ -131,7 +131,7 @@ var quiz = {
         15: {
             "question"      :   "Absolute agreement or consistency?",
             "choices"       :   {
-                                    "Absolute Agreement: if different raters read the same measurement to the same object (y = x)": 18,
+                                    "Absolute Agreement: if different raters assign the same measurement to the same object (y = x)": 18,
                                     "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 19
                                 },
             "selection"       :   -1,
@@ -161,7 +161,7 @@ var quiz = {
         20: {
             "question"      :   "Absolute agreement or consistency?",
             "choices"       :   {
-                                    "Absolute Agreement: if different raters read the same measurement to the same object (y = x)": 22,
+                                    "Absolute Agreement: if different raters assign the same measurement to the same object (y = x)": 22,
                                     "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 23
                                 },
             "selection"       :   -1,
@@ -171,7 +171,7 @@ var quiz = {
         21: {
             "question"      :   "Absolute agreement or consistency?",
             "choices"       :   {
-                                    "Absolute Agreement: if different raters read the same measurement to the same object (y = x)": 24,
+                                    "Absolute Agreement: if different raters assign the same measurement to the same object (y = x)": 24,
                                     "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 25
                                 },
             "selection"       :   -1,
