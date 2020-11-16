@@ -16,7 +16,7 @@ var quiz = {
             "question"      :   "What kind of reliability you wish to explore?",
             "choices"       :   {
                                     "Intrarater Reliability: reliability within the same rater": 1,
-                                    "Interrater Reliability: relatbility between different raters": 2
+                                    "Interrater Reliability: relatbility between different raters": 3
                                 },
             "selection"     :   -1,
             "previous"      :   0,
@@ -40,7 +40,7 @@ var quiz = {
                                     "Not Anova": 9
                                 },
             "selection"       :   -1,
-            "previous"      :   26,
+            "previous"      :   0,
             "results": -1
         },
         3: {
@@ -50,7 +50,7 @@ var quiz = {
                                     "Each subject rated by different set of raters": 10
                                 },
             "selection"       :   -1,
-            "previous"      :   2,
+            "previous"      :   26,
             "results": -1
         },
         5 : {

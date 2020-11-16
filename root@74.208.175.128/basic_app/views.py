@@ -51,7 +51,3 @@ def fleisskappa(request):
     return render(request, 'basic_app/FleissKappa.html')
 
 
-def ccc(request):
-    return render(request, 'basic_app/CCC.html')
-
-

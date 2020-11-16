@@ -1,0 +1,18 @@
+asgiref @ file:///tmp/build/80754af9/asgiref_1602513567813/work
+astroid @ file:///opt/concourse/worker/volumes/live/b22b518b-f584-4586-5ee9-55bfa4fca96e/volume/astroid_1592495912194/work
+certifi==2020.6.20
+Django @ file:///tmp/build/80754af9/django_1601563330930/work
+isort @ file:///tmp/build/80754af9/isort_1602603989581/work
+Jinja2==2.11.2
+lazy-object-proxy==1.4.3
+MarkupSafe==1.1.1
+mccabe==0.6.1
+psycopg2==2.8.4
+pylint @ file:///opt/concourse/worker/volumes/live/9eebf2dc-3c74-4778-701c-c55b13929def/volume/pylint_1598624018844/work
+pytz==2020.1
+rpy2==2.9.4
+six==1.15.0
+sqlparse @ file:///tmp/build/80754af9/sqlparse_1602184451250/work
+toml @ file:///tmp/build/80754af9/toml_1592853716807/work
+typed-ast==1.4.1
+wrapt==1.11.2

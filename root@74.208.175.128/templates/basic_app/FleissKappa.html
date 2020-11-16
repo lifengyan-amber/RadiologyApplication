@@ -1,0 +1,57 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleiss’ Kappa</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body style = "padding-left:2%;">
+    
+<h2>Fleiss’ Kappa</h2>
+
+<h3>Interpretation:</h3>
+
+The degree of absolute agreement of categorical variables.
+<br>
+Landis, J. R. and Koch, G. G. (1977) "The measurement of observer agreement for categorical data" in Biometrics. Vol. 33, pp. 159–174 gives the following suggestion of intepreting Kappa:
+
+<br>
+
+below 0.00: poor<br>
+between 0.00 and 0.20: slight<br>
+between 0.21 and 0.40: fair<br>
+between 0.41 and 0.60: moderate<br>
+between 0.61 and 0.80: substantial<br>
+above 0.8: excellent<br>
+
+<h3>Assumption:</h3>
+<p>The outcomes are categorical</p>
+<p>Each object is categorized by the same set of raters.</p>
+<p>Can have more than two raters.</p>
+<p>The categories used for each object is the same</p>
+
+<h3>Formula:</h3>
+
+<p>\(\frac{P_o - P_e}{1-P_e}\)</p>
+
+
+ <h3>Example in R</h3>
+
+ <div style = "width: 40%;">
+ {% include "basic_app/fleisskappa_r.html" %}
+
+ </div>
+
+ 
+<h3>Reference:</h3>
+<p>
+Landis, J. R. and Koch, G. G. (1977) "The measurement of observer agreement for categorical data" in Biometrics. Vol. 33, pp. 159–174<br>
+Fleiss, J.L., and others. 1971. “Measuring Nominal Scale Agreement Among Many Raters.” Psychological Bulletin 76 (5): 378–82.<br>
+Joseph L. Fleiss, Myunghee Cho Paik, Bruce Levin. 2003. Statistical Methods for Rates and Proportions. 3rd ed. John Wiley; Sons, Inc.
+</p>
+
+
+</body>
+</html>

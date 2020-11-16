@@ -21,5 +21,4 @@ urlpatterns = [
     url(r'^icc1ka/$', views.icc1ka, name = 'icc1ka'),
     url(r'^weightedkappa/$', views.weightedkappa, name = 'weightedkappa'),
     url(r'^fleisskappa/$', views.fleisskappa, name = 'fleisskappa'),
-    url(r'^ccc/$', views.ccc, name = 'ccc'),
 ]
