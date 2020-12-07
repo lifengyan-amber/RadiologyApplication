@@ -2,8 +2,8 @@ var quiz = {
         0 : {
             "question"      :   "What type of variables are you working with?",
             "choices"       :   {
-                                    "Multicategorical data: for example, Likert scale level of assessment confidence": 28,
-                                    "Binary data: for example, yes or no": 27,
+                                    "Multicategorical Data: for example, Likert scale level of assessment confidence": 28,
+                                    "Binary Data: for example, yes or no": 27,
                                     "Continuous Variable: for example, measuring Carotid Vessel Wall Volume": 26,
                                 },
             "selection"     :   -1,
@@ -13,7 +13,7 @@ var quiz = {
         },
         
         26 : {
-            "question"      :   "What kind of reliability you wish to explore?",
+            "question"      :   "What kind of reliability do you wish to explore?",
             "choices"       :   {
                                     "Intrarater Reliability: reliability within the same rater": 1,
                                     "Interrater Reliability: relatbility between different raters": 2
@@ -26,8 +26,8 @@ var quiz = {
         1: {
             "question"      :   "What kind of measurements do you use?",
             "choices"       :   {
-                                    "Single measurements: this ICC is an index for the reliability of the ratings for one, typical, single rater.": 5,
-                                    "Mean of multiple measurements: this ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 6
+                                    "Single measurements: This ICC is an index for the reliability of the ratings for one, typical, single rater.": 5,
+                                    "Mean of Multiple Measurements: This ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 6
                                 },
             "selection"       :   -1,
             "previous"      :   26,
@@ -199,7 +199,7 @@ var quiz = {
             "link": "icc3kC"
         },
         27 : {
-            "results": "Weighted Kappa",
+            "results": "Cohen's Weighted Kappa",
             "previous":   0,
             "link": "weightedkappa"
         },

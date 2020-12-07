@@ -29,6 +29,12 @@ body {
   font-size: 18px;
 }
 
+.tooltip {
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  border: 2px solid #f90;
+}
+
 #header {
     padding-top: 1px;
     position: relative;

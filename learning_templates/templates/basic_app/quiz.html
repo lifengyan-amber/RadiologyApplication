@@ -6,20 +6,17 @@
     <title>Search</title>
     <!-- jquery for maximum compatibility -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
     <script src="{% static "quizdata/quizdata.js" %}"></script>
     <link rel="stylesheet" href="{% static "css/quiz.css" %}"/>
     <script>
 
-         $(document).ready(function(){
+        $(document).ready(function(){
           $('[data-toggle="tooltip"]').tooltip({
             'selector': '',
             'placement': 'top',
@@ -44,14 +41,21 @@
             'container':'body'
           });
        
+          var pageX, pageY;
+
+            $(document).mousemove(
+                function(e){
+                    pageX = e.pageX;
+                    pageY = e.pageY;
+                });
 
         function addChoices(choices){
             if(typeof choices !== undefined){
                 $('#question').text(quiz[currentquestion]["question"]);
                 $('#choice-block').empty();
                 for (const [key, value] of Object.entries(choices)) {
-                $(document.createElement('li')).addClass('choice choice-box').attr('data-index', key).attr('data-toggle',"tooltip").attr('title',"wew").text(key).appendTo('#choice-block');
-                }
+                    $(document.createElement('li')).addClass('choice choice-box').attr('data-index', key).attr('title',"sdsss").text(key).appendTo('#choice-block');
+            }
             }
         }
         
@@ -175,7 +179,7 @@
                 addChoices(quiz[0]['choices']);
             
                 //add submit button
-                $(document.createElement('div')).addClass('choice-box').attr('id', 'previousbutton').text('Previous Question').css({'font-weight':700,'color':'#222','padding':'30px 0'}).appendTo('#frame');
+                $(document.createElement('div')).addClass('choice-box').attr('id', 'previousbutton').text('Previous Question').css({'font-weight':700,'color':'#222','padding':'10px 0'}).appendTo('#frame');
             
                 setupButtons();
             }
