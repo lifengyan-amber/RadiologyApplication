@@ -7,15 +7,28 @@
     <!-- jquery for maximum compatibility -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="{% static "quizdata/quizdata.js" %}"></script>
     <link rel="stylesheet" href="{% static "css/quiz.css" %}"/>
     <script>
+
+         $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip({
+            'selector': '',
+            'placement': 'top',
+            'container':'body'
+          });   
+        });
    
 
-    var quiztitle = "Search what is the right agreement statistics for you!";
+    var quiztitle = "Search for what is the right agreement statistic for you!";
 
     //set up quiz decision tree
     
@@ -25,16 +38,20 @@
     var currentquestion = 0, submt=true, picked, previousquestion = 0;
 
     jQuery(document).ready(function($){
-
+        $('[data-toggle="tooltip"]').tooltip({
+            'selector': '',
+            'placement': 'top',
+            'container':'body'
+          });
+       
 
         function addChoices(choices){
             if(typeof choices !== undefined){
                 $('#question').text(quiz[currentquestion]["question"]);
                 $('#choice-block').empty();
                 for (const [key, value] of Object.entries(choices)) {
-                $(document.createElement('li')).addClass('choice choice-box').attr('data-index', key).text(key).appendTo('#choice-block');    
+                $(document.createElement('li')).addClass('choice choice-box').attr('data-index', key).attr('data-toggle',"tooltip").attr('title',"wew").text(key).appendTo('#choice-block');
                 }
-                
             }
         }
         

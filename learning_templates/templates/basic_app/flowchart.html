@@ -18,12 +18,12 @@
 <link rel="stylesheet" href="{% static "css/mystyle.css" %}"/>
 </head>
 <body>
-   
-    <div id ="wrapper">
     {% include "basic_app/navbar.html" %}
+
+    <div id ="wrapper">
     
-    <div class = "center" style = "display: block;">
-    <h1>Agreement Flow Chart</h1>
+    <div id = "chart" class = "center" style = "display: block;">
+    <h1 style = "margin-left: 10%";>Agreement Flow Chart</h1>
     <nav class="nav">
                 <ul>
                 <li>
@@ -41,7 +41,7 @@
                                     <a href="#" data-toggle="tooltip" title="Two categories">Binomial Variable</a>
                                  <ul>
                                     <li>
-                                    <a href="{% url 'basic_app:weightedkappa' %}" target="_blank" data-toggle="tooltip" title="">Weighted Kappa</a>
+                                    <a href="{% url 'basic_app:weightedkappa' %}" target="_blank" data-toggle="tooltip" title="">Cohen’s Weighted Kappa</a>
                                  </ul>
                         </ul>
                 </ul>

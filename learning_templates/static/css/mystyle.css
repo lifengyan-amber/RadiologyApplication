@@ -22,20 +22,15 @@ html,
 body {
   width: 100%;
   height: 100%;
-    
   background: RGB(16,74,113);
-    
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 18px;
 }
 
 
-div a{
-    width: 150px;
+#chart a{
+    width: 70px;
     color: #fff;
 }
-
-
 
 h1 {
   padding-top: 1px;
@@ -123,14 +118,14 @@ h1 {
   display: inline-block;
   padding: 5px 10px;
   
-  border-radius: 5px;
+  border-radius: 10px;
   border: 1px solid #fff;
   
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 15px;
+  font-size: 8px;
 }
 
 .nav li a:hover, .nav li a:hover+ul li a {
@@ -155,6 +150,6 @@ h1 {
 #wrapper {
   margin-left:auto;
   margin-right:auto;
-  width: 2800px;
-  height: 1000px;
+  width: 1320px;
+  height: 750px;
 }
