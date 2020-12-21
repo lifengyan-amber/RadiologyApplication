@@ -11,19 +11,18 @@
     
 <h2>CCC</h2>
 <h4>- Developed by Lin L(1989) to measure the agreement between two sets of measurements of the same variable, usually between the new measurements and the gold standard.</h4>
-<h4>- Anova assumptions don't need to be satisfied, however needs to apply one of transformation method (for example: Fisher Z-Transformation)<br>
-    in order to get asymptotic normal distribution to compute confidence interval. </h4> 
+<h4>- Anova assumptions don't need to be satisfied, however needs to apply one of transformation method (for example: Fisher Z-Transformation) in order to get asymptotic normal distribution to compute confidence interval. </h4> 
 
 <h3>Interpretation:</h3>
 
-The degree of agreement among single measurements rated by 2 .
+The degree of agreement among single measurements rated by 2 raters.
 
 McBride(2005) gives the following suggestion for interpreting CCC:
 <br>
-below 0.90: poor<br>
-between 0.90 to 0.95: moderate<br>
-between 0.95 to 0.99: substantial<br>
-above 0.99 almost perfect.<br>
+below 0.90: Poor<br>
+between 0.90 to 0.95: Moderate<br>
+between 0.95 to 0.99: Substantial<br>
+above 0.99 almost Perfect.<br>
 
 <h3>Formula:</h3>
 
@@ -44,12 +43,12 @@ above 0.99 almost perfect.<br>
 
 
 
- <h3>Live Example: Try run this yourself</h3>
+ <h3>Live Example: Try this yourself!</h3>
 
 <iframe width='40%' height='40%' src='https://rdrr.io/snippets/embed/?code=library(%22epiR%22)%0Aset.seed(seed%20%3D%201234)%0Amethod1%20%3C-%20rnorm(n%20%3D%2025%2C%20mean%20%3D%200%2C%20sd%20%3D%201)%0Amethod2%20%3C-%20method1%20%2B%20runif(n%20%3D%2025%2C%20min%20%3D%20-0.5%2C%20max%20%3D%200.5)%0Atmp%20%3C-%20data.frame(method1%2C%20method2)%0Aepi.ccc(method1%2C%20method2%2C%20ci%20%3D%20%22z-transform%22%2C%20conf.level%20%3D%200.95%2C%20%0A%20%20%20rep.measure%20%3D%20FALSE)' frameborder='0'></iframe>
 
 
-<h3>Reference:</h3>
+<h3>References:</h3>
 <p>
 Altman DG (1991) Practical statistics for medical research. London: Chapman and Hall. <br>
 Lin L.I-K (1989) A [CCC] to evaluate reproducibility. Biometrics 45:255-268<br>

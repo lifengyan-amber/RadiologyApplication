@@ -2,8 +2,7 @@ var quiz = {
         0 : {
             "question"      :   "What type of variable are you working with?",
             "choices"       :   {
-                                    "Multicategorical Data|For example, Likert scale level of assessment confidence": 28,
-                                    "Binary Data|For example, yes or no": 27,
+                                    "Categorical Data|For example, yes or no": 29,
                                     "Continuous Variable|For example, measuring Carotid Vessel Wall Volume": 26,
                                 },
             "selection"     :   -1,
@@ -11,12 +10,24 @@ var quiz = {
             "results": -1
 
         },
+
+        29: {
+            "question"      :   "Are you working with Multicategorical Data or Binary Data?",
+            "choices"       :   {
+                                    "Multicategorical Data|For example, Likert scale level of assessment confidence": 28,
+                                    "Binary Data|For example, yes or no": 27,
+                                },
+            "selection"     :   -1,
+            "previous"      :   0,
+            "results": -1
+        },
+
         
         26 : {
             "question"      :   "What kind of reliability do you wish to explore?",
             "choices"       :   {
-                                    "Intrarater Reliability: reliability within the same rater": 1,
-                                    "Interrater Reliability: relatbility between different raters": 2
+                                    "Intrarater Reliability|Reliability within the same rater": 1,
+                                    "Interrater Reliability|Relatbility between different raters": 2
                                 },
             "selection"     :   -1,
             "previous"      :   0,
@@ -24,30 +35,30 @@ var quiz = {
 
         },
         1: {
-            "question"      :   "What kind of measurements do you use?",
+            "question"      :   "What kind of ICC measurements do you use?",
             "choices"       :   {
-                                    "Single measurements: This ICC is an index for the reliability of the ratings for one, typical, single rater.": 5,
-                                    "Mean of Multiple Measurements: This ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 6
+                                    "Single measurements|An index for the reliability of the ratings for a typical single rater.": 5,
+                                    "Mean of Multiple Measurements|An index for the reliability of different raters averaged together. This ICC is always higher than the single measurements.": 6
                                 },
             "selection"       :   -1,
             "previous"      :   26,
             "results": -1
         },
         2: {
-            "question"      :   "Does the model satisfy ANOVA assumption?",
+            "question"      :   "Does the model satisfy ANOVA assumptions?",
             "choices"       :   {
-                                    "Yes: The data are independent, the responses for each factor level have a normal distribution, with same mean and variance.": 3,
-                                    "No: The assumptions above not satisfied.": 9
+                                    "Yes|The data are independent, the responses for each factor level have a normal distribution, with same mean and variance.": 3,
+                                    "No|The assumptions above are not satisfied.": 9
                                 },
             "selection"       :   -1,
             "previous"      :   26,
             "results": -1
         },
         3: {
-            "question"      :   "How do raters read?",
+            "question"      :   "How do the raters read?",
             "choices"       :   {
-                                    "Same set of raters for all subjects": 7,
-                                    "Each subject rated by different set of raters": 10
+                                    "Same set of raters for all subjects.": 7,
+                                    "Each subject is rated by a different set of raters.": 10
                                 },
             "selection"       :   -1,
             "previous"      :   2,
@@ -64,20 +75,20 @@ var quiz = {
             "link": "icckA"
         },
         7: {
-            "question"      :   "How are raters selected?",
+            "question"      :   "How are the raters selected?",
             "choices"       :   {
-                                    "Specific set of raters": 8,
-                                    "Raters are randomly selected": 13
+                                    "Specific set of raters.": 8,
+                                    "Randomly selected raters.": 13
                                 },
             "selection"       :   -1,
             "previous"      :   3,
             "results": -1
         },
         8: {
-            "question"      :   "What kind of measurements do you use?",
+            "question"      :   "What kind of ICC measurements do you use?",
             "choices"       :   {
-                                    "Single measurements: this ICC is an index for the reliability of the ratings for one, typical, single rater.": 20,
-                                    "Mean of multiple measurements: this ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 21
+                                    "Single measurements|An index for the reliability of the ratings for a typical single rater.": 20,
+                                    "Mean of Multiple Measurements|An index for the reliability of different raters averaged together. This ICC is always higher than the single measurements.": 21
                                 },
             "selection"       :   -1,
             "previous"      :   7,
@@ -89,10 +100,10 @@ var quiz = {
             "link": "ccc"
         },
         10: {
-            "question"      :   "What kind of measurements do you use?",
+            "question"      :   "What kind of ICC measurements do you use?",
             "choices"       :   {
-                                    "Single measurements: this ICC is an index for the reliability of the ratings for one, typical, single rater.": 11,
-                                    "Mean of multiple measurements: this ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 12
+                                    "Single measurements|An index for the reliability of the ratings for a typical single rater.": 11,
+                                    "Mean of Multiple Measurements|An index for the reliability of different raters averaged together. This ICC is always higher than the single measurements.": 12
                                 },
             "selection"       :   -1,
             "previous"      :   3,
@@ -109,30 +120,30 @@ var quiz = {
             "link": "icc1ka"
         },
         13: {
-            "question"      :   "What kind of measurements do you use?",
+            "question"      :   "What kind of ICC measurements do you use?",
             "choices"       :   {
-                                    "Single measurements: this ICC is an index for the reliability of the ratings for one, typical, single rater.": 14,
-                                    "Mean of multiple measurements: this ICC is an index for the reliability of different raters averaged together. This ICC is always higher than the Single measures ICC.": 15
+                                    "Single measurements|An index for the reliability of the ratings for a typical single rater.": 14,
+                                    "Mean of Multiple Measurements|An index for the reliability of different raters averaged together. This ICC is always higher than the single measurements.": 15
                                 },
             "selection"       :   -1,
             "previous"      :   7,
             "results": -1
         }, 
         14: {
-            "question"      :   "Absolute agreement or consistency?",
+            "question"      :   "Do you wish to measure Absolute agreement or Consistency?",
             "choices"       :   {
-                                    "Absolute Agreement: if different raters assign the same measurement to the same object (y = x)": 16,
-                                    "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 17
+                                    "Absolute Agreement|If different raters assign the same measurement to the same object.": 16,
+                                    "Consistency|If a raters score can be equated to another raters, and there is an added systematic error.": 17
                                 },
             "selection"       :   -1,
             "previous"      :   13,
             "results": -1
         },
         15: {
-            "question"      :   "Absolute agreement or consistency?",
+            "question"      :   "Do you wish to measure Absolute agreement or Consistency?",
             "choices"       :   {
-                                    "Absolute Agreement: if different raters assign the same measurement to the same object (y = x)": 18,
-                                    "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 19
+                                    "Absolute Agreement|If different raters assign the same measurement to the same object.": 18,
+                                    "Consistency|If a raters score can be equated to another raters, and there is an added systematic error.": 19
                                 },
             "selection"       :   -1,
             "previous"      :   13,
@@ -159,20 +170,20 @@ var quiz = {
             "link": "icckc"
         },
         20: {
-            "question"      :   "Absolute agreement or consistency?",
+            "question"      :   "Do you wish to measure Absolute agreement or Consistency?",
             "choices"       :   {
-                                    "Absolute Agreement: if different raters assign the same measurement to the same object (y = x)": 22,
-                                    "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 23
+                                    "Absolute Agreement|If different raters assign the same measurement to the same object.": 22,
+                                    "Consistency|If a raters score can be equated to another raters, and there is an added systematic error.": 23
                                 },
             "selection"       :   -1,
             "previous"      :   8,
             "results": -1
         },
         21: {
-            "question"      :   "Absolute agreement or consistency?",
+            "question"      :   "Do you wish to measure Absolute agreement or Consistency?",
             "choices"       :   {
-                                    "Absolute Agreement: if different raters assign the same measurement to the same object (y = x)": 24,
-                                    "Consistency: if one rater's score can be equated to another rater's score plus a systematic error (y = x + e)": 25
+                                    "Absolute Agreement|If different raters assign the same measurement to the same object.": 24,
+                                    "Consistency|If a raters score can be equated to another raters, and there is an added systematic error.": 25
                                 },
             "selection"       :   -1,
             "previous"      :   8,

@@ -10,29 +10,29 @@
 <body style = "padding-left:2%;">
     
 <h2>ICC(k,A)</h2>
-<h4>- Defined by Shrout and Fleiss (1979) and McGraw and Wong (1996)</h4>
+<h4>- Defined by Shrout and Fleiss (1979) and McGraw and Wong (1996).</h4>
 <h4>- Calculate the degree of absolute agreement among averaged measurements rated by a specific set of raters.</h4>
 
 <h3>Interpretation:</h3>
 Degree of absolute agreement among averaged measurements rated by a specific set of raters.
 <br>
-Koo and Li (2016) gives the following suggestion for interpreting ICC (Koo and Li 2016):
+Koo and Li (2016) give the following suggestion for interpreting ICC (Koo and Li 2016):
 <br>
-below 0.50: poor<br>
-between 0.50 and 0.75: moderate<br>
-between 0.75 and 0.90: good<br>
-above 0.90: excellent<br>
+below 0.50: Poor<br>
+between 0.50 and 0.75: Moderate<br>
+between 0.75 and 0.90: Good<br>
+above 0.90: Excellent<br>
 
 <h3>Underlying Model: Two-way mixed effects model</h3>
 
 <p>\(x_{ij} = \mu + r_i + c_j + rc_{ij} + e_{ij} \)</p>
 
-<h3>Assumption:</h3>
-<p>\(\mu\): The population mean of observations</p>
+<h3>Assumptions:</h3>
+<p>\(\mu\): The population mean of observations.</p>
 <p>\(r_i\): The row effects (effects between each sample) are random, independent and normally distributed with mean 0 and variance \(\sigma_{r}^2\).</p>
 <p>\(c_j\): The row effects (effects between each sample) are random, independent and normally distributed with mean 0 and variance \(\sigma_{c}^2\).</p>
 <p>\(rc_{ij}\): Interaction effect, also random, independent and normally distributed with mean 0 and variance \(\sigma_{rc}^2\).</p>
-<p>\(e_{ij}\): The residual error are random, independent and normally distributed with mean 0 and variance \(\sigma_{e}^2\). All residual effects are pairwise independent.</p>
+<p>\(e_{ij}\): The residual errors are random, independent and normally distributed with mean 0 and variance \(\sigma_{e}^2\). All residual effects are pairwise independent.</p>
 
 <h3>Formula:</h3>
 
@@ -52,12 +52,12 @@ above 0.90: excellent<br>
 
 
 
- <h3>Live Example: Try run this yourself</h3>
+ <h3>Live Example: Try this yourself</h3>
 
 <iframe width='40%' height='40%' src='https://rdrr.io/snippets/embed/?code=data(%22anxiety%22%2C%20package%20%3D%20%22irr%22)%0Ahead(anxiety%2C%204)%0Alibrary(%22irr%22)%0Aicc(anxiety%2C%20model%20%3D%20%22twoway%22%2C%20type%20%3D%20%22agreement%22%2C%20unit%20%3D%20%22single%22)' frameborder='0'></iframe>
 
 
-<h3>Reference:</h3>
+<h3>References:</h3>
 <p>
 Koo, Terry, and Mae Li. 2016. “A Guideline of Selecting and Reporting Intraclass Correlation Coefficients for Reliability Research.” Journal of Chiropractic Medicine 15 (March). doi:10.1016/j.jcm.2016.02.012.<br>
 Shrout, P.E., and J.L. Fleiss. 1979. “Intraclass Correlation: Uses in Assessing Rater Reliability.” Psychological Bulletin 86: 420–28.
