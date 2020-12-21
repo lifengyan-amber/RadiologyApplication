@@ -1,10 +1,10 @@
 var quiz = {
         0 : {
-            "question"      :   "What type of variables are you working with?",
+            "question"      :   "What type of variable are you working with?",
             "choices"       :   {
-                                    "Multicategorical Data: for example, Likert scale level of assessment confidence": 28,
-                                    "Binary Data: for example, yes or no": 27,
-                                    "Continuous Variable: for example, measuring Carotid Vessel Wall Volume": 26,
+                                    "Multicategorical Data|For example, Likert scale level of assessment confidence": 28,
+                                    "Binary Data|For example, yes or no": 27,
+                                    "Continuous Variable|For example, measuring Carotid Vessel Wall Volume": 26,
                                 },
             "selection"     :   -1,
             "previous"      :   -1,

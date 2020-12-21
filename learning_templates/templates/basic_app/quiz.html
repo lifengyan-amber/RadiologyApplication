@@ -25,7 +25,7 @@
         });
    
 
-    var quiztitle = "Search for what is the right agreement statistic for you!";
+    var quiztitle = "What is the right agreement statistics for you?";
 
     //set up quiz decision tree
     
@@ -41,21 +41,15 @@
             'container':'body'
           });
        
-          var pageX, pageY;
-
-            $(document).mousemove(
-                function(e){
-                    pageX = e.pageX;
-                    pageY = e.pageY;
-                });
 
         function addChoices(choices){
             if(typeof choices !== undefined){
                 $('#question').text(quiz[currentquestion]["question"]);
                 $('#choice-block').empty();
                 for (const [key, value] of Object.entries(choices)) {
-                    $(document.createElement('li')).addClass('choice choice-box').attr('data-index', key).attr('title',"sdsss").text(key).appendTo('#choice-block');
-            }
+                   
+                    $(document.createElement('li')).addClass('choice choice-box').attr('data-index', key).attr('id',key).attr('data-tooltip',key.split('|')[1]).text(key.split('|')[0]).appendTo('#choice-block');
+                }
             }
         }
         
