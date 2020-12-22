@@ -1,0 +1,50 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEM</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body style = "padding-left:2%;">
+    
+<h2>SEM - Standard Error of Measurements</h2>
+<h4>- Regarded as a “random variation in a measure when individual is tested many times“ (Hopkins, 2000, p.2)</h4>
+<h4>- Measures the absoluet reliability</h4>
+
+<h3>Formula:</h3>
+
+<p>\(SEM = SD\times \sqrt{(1-ICC)}\)</p>
+
+<p>\(SD\) = Pooled standard deviation of measurements; </p>
+<p> \(ICC\) = Reliability; </p>
+
+<p>Note that according to the formula above, the calculation various by the form of ICC.</p>
+<p>A generalized formula to calculate SEM suggested by Hopkins (2000):</p>
+
+<p>\(SEM = \sqrt{S^2_{between trials} + S^2_{residual}}\)</p>
+
+
+ <h3>Example in R</h3>
+
+ <div style = "width: 40%;">
+ {% include "basic_app/sem_r.html" %}
+
+ </div>
+
+
+
+ <h3>Live Example: Try this yourself!</h3>
+
+ <iframe width='40%' height='40%' src='https://rdrr.io/snippets/embed/?code=library(%22rel%22)%0Adata%20%3C-%20cbind(sample(50%3A100%2C200%2Creplace%3DTRUE)%2C%20sample(50%3A100%2C200%2Creplace%3DTRUE))%0Asem(data%3Ddata%2C%20type%3D%22mse%22%2C%20conf.level%3D0.95)' frameborder='0'></iframe>
+
+
+<h3>References:</h3>
+<p>
+Hopkins, W. G. (2000). Measures of Reliability in Sports Medicine and Science. Sports Medicine, 30(1), 1-15. http://dx.doi.org/10.2165/00007256-200030010-00001
+</p>
+
+
+</body>
+</html>

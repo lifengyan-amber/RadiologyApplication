@@ -1,0 +1,39 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOA</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body style = "padding-left:2%;">
+    
+<h2>Bland-Altman Limits of Agreement</h2>
+<h4>- The difference between two variables are plotted against their averages.</h4>
+<h4>- On x axis, the averages of the two measurements are displayed. On y axis, the difference between two variables are displayed.</h4>
+<h4>- This is a method for graphical comparison of two technicals or measurements or two variables of interest. If the differences are small and mean of the differences is near zero, the test is considered reliable</h4>
+
+
+ <h3>Example in R</h3>
+
+ <div style = "width: 40%;">
+ {% include "basic_app/loa_r.html" %}
+
+ </div>
+
+
+
+ <h3>Live Example: Try this yourself!</h3>
+
+ <iframe width='40%' height='40%' src='https://rdrr.io/snippets/embed/?code=measurement1%20%3C-%20rnorm(100)%0Ameasurement2%20%3C-%20rnorm(100%2C4%2C1)%20%2B%20rt(100%2C4%2C1)%0Astatistics.results%20%3C-%20blandr.statistics(%20measurement1%20%2C%20measurement2%20)%0Ablandr.plot.ggplot(%20statistics.results%20)' frameborder='0'></iframe>
+
+
+<h3>References:</h3>
+<p>
+Hopkins, W. G. (2000). Measures of Reliability in Sports Medicine and Science. Sports Medicine, 30(1), 1-15. http://dx.doi.org/10.2165/00007256-200030010-00001
+</p>
+
+
+</body>
+</html>

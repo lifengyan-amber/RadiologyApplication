@@ -55,3 +55,12 @@ def ccc(request):
     return render(request, 'basic_app/CCC.html')
 
 
+def SEM(request):
+    return render(request, 'basic_app/SEM.html')
+
+
+
+def LOA(request):
+    return render(request, 'basic_app/LOA.html')
+
+

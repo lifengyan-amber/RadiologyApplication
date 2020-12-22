@@ -60,6 +60,7 @@ body {
   border-radius: 3px;
   background-color: #000;
   background-color: hsla(0, 0%, 20%, 0.9);
+  border-radius: 25px;
   color: #fff;
   content: attr(data-tooltip);
   text-align: center;
@@ -78,6 +79,7 @@ body {
   border-top: 5px solid hsla(0, 0%, 20%, 0.9);
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
+  border-radius: 25px;
   content: " ";
   font-size: 0;
   line-height: 0;

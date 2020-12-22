@@ -22,4 +22,6 @@ urlpatterns = [
     url(r'^weightedkappa/$', views.weightedkappa, name = 'weightedkappa'),
     url(r'^fleisskappa/$', views.fleisskappa, name = 'fleisskappa'),
     url(r'^ccc/$', views.ccc, name = 'ccc'),
+    url(r'^SEM/$', views.SEM, name = 'SEM'),
+    url(r'^loa/$', views.LOA, name = 'LOA'),
 ]

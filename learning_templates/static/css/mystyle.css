@@ -28,7 +28,7 @@ body {
 
 
 #chart a{
-    width: 70px;
+    width: 61px;
     color: #fff;
 }
 
@@ -135,7 +135,7 @@ h1 {
 }
 
 .nav li a:hover {
-  transform: scale(2);
+  transform: scale(2.3);
   z-index: 1;
 }
 
@@ -156,5 +156,5 @@ h1 {
   margin-left:auto;
   margin-right:auto;
   width: 1350px;
-  height: 700px;
+  height: 650px;
 }
