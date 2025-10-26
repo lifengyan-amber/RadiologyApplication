@@ -27,7 +27,7 @@ SECRET_KEY = '=-f_%sls%3o*!yd0c5bw3ua5+0a%(euv=mosvthpam79#xxnu5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.eba-mfmb3h3n.us-west-2.elasticbeanstalk.com','127.0.0.1']
+ALLOWED_HOSTS = ['django-env.eba-mfmb3h3n.us-west-2.elasticbeanstalk.com','127.0.0.1','localhost','.vercel.app','.now.sh']
 
 
 # Application definition
@@ -76,6 +76,7 @@ WSGI_APPLICATION = 'learning_templates.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# SQLite for local development, but we don't actually use the database
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -124,4 +125,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS =[
     STATIC_DIR,
 ]
+
+# For Vercel deployment
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
