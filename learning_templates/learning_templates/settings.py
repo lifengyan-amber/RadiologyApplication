@@ -27,7 +27,7 @@ SECRET_KEY = '=-f_%sls%3o*!yd0c5bw3ua5+0a%(euv=mosvthpam79#xxnu5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-env.eba-mfmb3h3n.us-west-2.elasticbeanstalk.com','127.0.0.1','localhost','.vercel.app','.now.sh']
+ALLOWED_HOSTS = ['django-env.eba-mfmb3h3n.us-west-2.elasticbeanstalk.com','127.0.0.1','localhost','.vercel.app','.now.sh','md.softx.ca']
 
 
 # Application definition
@@ -44,6 +44,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -127,5 +128,7 @@ STATICFILES_DIRS =[
 ]
 
 # For Vercel deployment
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# Disable WhiteNoise compression for easier debugging
+WHITENOISE_AUTOREFRESH = True
 
